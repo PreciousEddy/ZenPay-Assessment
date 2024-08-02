@@ -1,4 +1,5 @@
 # ZenPay-Assessment
+
 # Web Infrastructure Provisioning
 
 This repository contains Terraform configurations to provision a web infrastructure stack on both AWS and Azure.
@@ -203,6 +204,7 @@ This workflow does the following:
 - Initializes Terraform.
 - Runs `terraform plan` to show the changes.
 - Runs `terraform apply` to apply the changes if the branch is `main`.
-```
 
-This README file includes the specified AWS file directory and provides detailed instructions on setting up and deploying the web infrastructure stack using Terraform on both AWS and Azure.
+
+> This README file includes the specified AWS file directory and provides detailed instructions on setting up and deploying the web infrastructure stack using Terraform on both AWS and Azure.
+
