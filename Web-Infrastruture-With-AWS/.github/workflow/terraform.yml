@@ -34,9 +34,26 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
+      - name: Terraform Validate
+        run: terraform validate
+
       - name: Terraform Plan
         run: terraform plan -out=plan.out
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main'
         run: terraform apply -auto-approve plan.out
+
+      - name: Upload Plan Output
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: terraform-plan
+          path: plan.out
+
+      - name: Upload Terraform Logs
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: terraform-logs
+          path: .terraform
