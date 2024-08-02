@@ -40,20 +40,7 @@ jobs:
       - name: Terraform Validate
         run: terraform validate
 
-      - name: Terraform Plan
-        run: terraform plan -out "tfplan"
-
-      - name: Terraform Apply
-        if: github.ref == 'refs/heads/main'
-        run: terraform apply -auto-approve "tfplan"
-
-      - name: Upload Plan Output
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: terraform-plan
-          path: "tfplan"
-
+      
       - name: Upload Terraform Logs
         if: failure()
         uses: actions/upload-artifact@v3
