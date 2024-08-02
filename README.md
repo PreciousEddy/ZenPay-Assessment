@@ -14,14 +14,13 @@ This repository contains Terraform configurations to provision a web infrastruct
 # File Directory
 
 ```python
-```plaintext
 Web-Infrastruture-With-AWS-/
 ├── aws-web-infrastructure/
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── providers.tf
-└── terraform.tfvars
+    ├── main.tf
+    ├── variables.tf
+    ├── outputs.tf
+    ├── providers.tf
+    └── terraform.tfvars
 
 Web-Infrastructure-with-Azure/
 ├── main.tf
@@ -61,6 +60,7 @@ Web-Infrastructure-with-Azure/
 ## AWS
 
 ### terraform-aws-infrastructure/
+
 - **main.tf**: The main configuration file to define the AWS infrastructure resources.
 - **variables.tf**: Definitions of variables used across the project.
 - **outputs.tf**: Output variables to display useful information after deployment.
@@ -70,22 +70,26 @@ Web-Infrastructure-with-Azure/
 ## Azure
 
 ### terraform-azure-infrastructure/
+
 - **main.tf**: The main configuration file to include and reference the other module files.
 - **variables.tf**: Definitions of variables used across the project.
 - **terraform.tfvars**: Variable values (sensitive data like credentials should be managed securely and not committed to the repository).
 - **outputs.tf**: Output variables to display useful information after deployment.
 
 ### network/
+
 - **vnet.tf**: Virtual Network configuration.
 - **subnets.tf**: Subnet configurations for web and database tiers.
 - **nsgs.tf**: Network Security Groups for the subnets.
 - **network_interfaces.tf**: Network interfaces for VMs.
 
 ### compute/
+
 - **availability_set.tf**: Configuration for the availability set.
 - **virtual_machines.tf**: Virtual machine configurations.
 
 ### load_balancer/
+
 - **public_ip.tf**: Public IP configuration for the load balancer.
 - **load_balancer.tf**: Load balancer configuration.
 - **backend_pool.tf**: Backend pool configuration.
@@ -93,10 +97,12 @@ Web-Infrastructure-with-Azure/
 - **load_balancing_rule.tf**: Load balancing rule configuration.
 
 ### application_gateway/
+
 - **public_ip.tf**: Public IP configuration for the application gateway.
 - **application_gateway.tf**: Application gateway configuration.
 
 ### sql_database/
+
 - **sql_server.tf**: SQL Server configuration.
 - **sql_database.tf**: SQL Database configuration.
 - **sql_firewall_rule.tf**: SQL Firewall rule configuration.
