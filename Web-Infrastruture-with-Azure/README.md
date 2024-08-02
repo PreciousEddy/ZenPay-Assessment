@@ -1,3 +1,6 @@
+Here is the raw README file content for your repository:
+
+```markdown
 # ZenPay-Assessment
 # Web Infrastructure Provisioning
 
@@ -86,7 +89,32 @@ web-infrastructure-assessment/
 
 # Deployment
 
- Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/web-infrastructure-assessment.git
-   cd web-infrastructure-assessment
+Clone the repository:
+
+```sh
+git clone https://github.com/yourusername/web-infrastructure-assessment.git
+cd web-infrastructure-assessment
+```
+
+# Components
+
+- **Virtual Network**: Creates a VNet with address space 10.0.0.0/16.
+- **Subnets**: Creates two subnets for web and database tiers.
+- **NSGs**: Configures security groups for the subnets.
+- **Virtual Machines**: Creates VMs for web and database tiers.
+- **Load Balancer**: Configures a standard Azure Load Balancer.
+- **Application Gateway**: Sets up an Application Gateway.
+- **Azure SQL Database**: Provisions an SQL Database.
+- **Security**: Implements Key Vault, Backup, and Security Center configurations.
+
+# Workflow
+
+This workflow does the following:
+
+- Checks out the code from your repository.
+- Sets up Terraform.
+- Logs into Azure using the Service Principal credentials stored in the repository secrets.
+- Initializes Terraform.
+- Runs `terraform plan` to show the changes.
+- Runs `terraform apply` to apply the changes if the branch is `main`.
+```
