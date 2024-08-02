@@ -12,6 +12,7 @@ This repository contains Terraform configurations to provision a web infrastruct
 
 # File Directory
 
+```python
 ```plaintext
 Web-Infrastruture-With-AWS-/
 ├── aws-web-infrastructure/
@@ -52,6 +53,7 @@ Web-Infrastructure-with-Azure/
 │   ├── backup.tf
 │   ├── security_center.tf
 ├── README.md
+```
 
 # Directory Breakdown
 
@@ -108,54 +110,53 @@ Web-Infrastructure-with-Azure/
 ## AWS
 
 1. **Clone the repository**:
-   ```sh
-   git clone https://github.com/PreciousEddy/ZenPay-Assessment.git
-   cd ZenPay-Assessment
-   ```
+
+   `git clone https://github.com/PreciousEddy/ZenPay-Assessment.git`
+
+   `cd ZenPay-Assessment`
 
 2. **Initialize Terraform**:
-   ```sh
-   terraform init
-   ```
-
+ 
+      `terraform init`
+  
 3. **Plan the infrastructure**:
-   ```sh
-   terraform plan
-   ```
+
+      `terraform plan`
+
 
 4. **Apply the infrastructure**:
-   ```sh
-   terraform apply -auto-approve
-   ```
-
+   
+      `terraform apply -auto-approve`
+  
 ## Azure
 
 1. **Clone the repository**:
-   ```sh
-   git clone https://github.com/yourusername/terraform-azure-infrastructure.git
-   cd terraform-azure-infrastructure
-   ```
+
+   `git clone https://github.com/PreciousEddy/ZenPay-Assessment.git`
+
+   `cd ZenPay-Assessment`
 
 2. **Log in to Azure**:
+
    Ensure you have the Azure CLI installed and log in:
-   ```sh
-   az login
-   ```
+   
+      `az login`
+ 
 
 3. **Initialize Terraform**:
-   ```sh
-   terraform init
-   ```
+ 
+   ` terraform init`
+  
 
 4. **Plan the infrastructure**:
-   ```sh
-   terraform plan
-   ```
+   
+   `terraform plan`
+   
 
 5. **Apply the infrastructure**:
-   ```sh
-   terraform apply -auto-approve
-   ```
+ 
+   `terraform apply -auto-approve`
+   
 
 # Components
 
